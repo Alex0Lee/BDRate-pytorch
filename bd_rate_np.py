@@ -9,9 +9,7 @@ def BD_RATE(R1, PSNR1, R2, PSNR2, piecewise=0):
 
     # rate method
     p1 = np.polyfit(PSNR1, lR1, 3)
-    print(p1)
     p2 = np.polyfit(PSNR2, lR2, 3)
-    print(p2)
 
     # integration interval
     min_int = max(min(PSNR1), min(PSNR2))
